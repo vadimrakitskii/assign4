@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Print Title for the App
-st.title("Microsoft Stock Data Dashboard by Peter Wysocki")
+st.title("Microsoft Stock Data Dashboard by Vadim Rakitskii")
 
 # Read CSV file with stock data (CSV file must be in 'main' folder for your assignment 4 repository) 
 df = pd.read_csv("msft.csv")
