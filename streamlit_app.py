@@ -9,7 +9,7 @@ st.title("Microsoft Stock Data Dashboard by Vadim Rakitskii")
 df = pd.read_csv("msft.csv")
 
 # Set up the 3 tabs on the Dashboard
-tabs = st.tabs(["📋 Raw Data", "📈 Price Chart", "📊 Volume Chart"])
+tabs = st.tabs(["📋 Raw Data", "📈 Price Chart", "📊 Volume Chart", "Name Printing Tab"])
 
 # Tab 1: Raw Data
 with tabs[0]:
@@ -25,3 +25,8 @@ with tabs[1]:
 with tabs[2]:
     st.subheader(f"Volume for MSFT")
     st.bar_chart(df['Volume'])
+
+# Tab 4: Volume Chart
+with tabs[3]:
+    st.subheader(f"Name Printing")
+    
