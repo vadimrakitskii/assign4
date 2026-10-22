@@ -31,17 +31,17 @@ with tabs[3]:
     st.subheader(f"Mystery Tab")
     st.title("Circle")
  
-df2 = pd.DataFrame({"x": [0], "y": [0]})
+    df2 = pd.DataFrame({"x": [0], "y": [0]})
  
-st.vega_lite_chart(
-    df2,
-    {
-        "height": 300,
-        "mark": {"type": "circle", "size": 40000, "color": "steelblue", "opacity": 1},
-        "encoding": {
-            "x": {"field": "x", "type": "quantitative", "axis": None, "scale": {"domain": [-1, 1]}},
-            "y": {"field": "y", "type": "quantitative", "axis": None, "scale": {"domain": [-1, 1]}},
+    st.vega_lite_chart(
+        df2,
+        {
+            "height": 300,
+            "mark": {"type": "circle", "size": 40000, "color": "steelblue", "opacity": 1},
+            "encoding": {
+                "x": {"field": "x", "type": "quantitative", "axis": None, "scale": {"domain": [-1, 1]}},
+                "y": {"field": "y", "type": "quantitative", "axis": None, "scale": {"domain": [-1, 1]}},
+            },
+            "config": {"view": {"stroke": None}},
         },
-        "config": {"view": {"stroke": None}},
-    },
-)
+    )
